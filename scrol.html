@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Styled Scrollbar</title>
+
+    <style>
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .scroll-container {
+        width: 100%;
+        height: 300px;
+        overflow-y: scroll;
+        padding-right: 20px;
+      }
+
+      /* Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #555555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis
+        enim non arcu pretium, vel congue augue malesuada. Mauris congue metus a
+        ligula facilisis, a ultricies augue tempor. In at purus eu augue dictum
+        tempor id enim. Quisque ut enim ac mi convallis auctor.
+      </p>
+    </div>
+  </body>
+</html>

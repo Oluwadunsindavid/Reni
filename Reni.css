@@ -1,0 +1,1005 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* MY CODES */
+* {
+  text-decoration: none;
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(21,96,189);
+  border-radius: 0px;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background: #fff;
+}
+
+/* Firefox */
+/* Customize the scrollbar width and color */
+/* You may need to use @-moz-document url-prefix() to target only Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #3498db red;
+}
+
+body {
+  /* background-color: white; */
+  background-color: var(--sec-color) !important;
+  margin: 0 auto;
+  color: var(--dark-color) !important;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+/*HEADER*/
+header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.h-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4rem;
+}
+
+/*target the image directly */
+.image1 img {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ALLOWS THE LINE BELOW THE TEXT TO SHOW */
+nav ul li {
+  position: relative;
+}
+
+/* STYLING THE LOGIN BUTTON */
+header nav ul div .btn-1 {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 225, 0.75);
+  border-radius: 3px;
+  padding: 10px 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+header nav ul div .btn-1 a {
+  width: 50px;
+  color: rgb(91, 174, 202);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* STYLING THE GET STARTED BUTTON IN THE HEADER */
+.btn-2 {
+  background-color: #33619b;
+  color: #fff;
+  border: none;
+  padding: 13px 1.5rem;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-2 a {
+  color: #fff;
+}
+
+header nav ul li a {
+  color: #000;
+  display: block;
+}
+
+header nav ul li a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #33619b;
+  left: 0;
+  bottom: -7px;
+  position: absolute;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* MAIN */
+.main .container {
+  background: url(images/dow.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main #text {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center; */
+  /* align-content: center; */
+}
+
+.main .container h1 {
+  padding-top: 60px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .container p {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button2 {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.btn {
+  background-color: #33619b;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.btn a {
+  cursor: pointer;
+  color: white;
+}
+
+.image2 img {
+  /* How to center an image NOTE: It wont be in center if the width is set to 100% */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  /* END */
+  width: 55rem;
+  /* to give the image shadow */
+  padding: 70px 0;
+}
+h2 {
+  color: black;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif !important;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* STYLING ITEMS */
+.whole {
+  /* spacing bothsides */
+  padding: 20px 100px;
+}
+.items {
+  display: flex;
+  text-align: left;
+  gap: 70px;
+}
+
+/* STYLING THE IMAGES */
+.image3 img {
+  width: 20rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  /* padding: 20px; */
+}
+
+.items .image3 h3 {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.items .image3 .text {
+  text-align: justify;
+  /* padding: 40px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* justify-content: space-between; */
+}
+
+/* SECTION WOMAN */
+.section {
+  padding: 0 100px;
+}
+
+.section .line {
+  border-bottom: 5px solid #33619b;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  /* padding-bottom: 60px; */
+}
+
+.section .div1 h4 {
+  text-align: center;
+  color: #33619b;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px 0;
+}
+
+/* styling the divs inside divs */
+.div2text {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+/* styling the image */
+.div2-image img {
+  width: 80%;
+}
+
+.div2text .numberdiv .number {
+  height: 20px;
+  width: 20px;
+  background-color: lightblue;
+  color: darkblue;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1px;
+}
+
+.div2text .textdiv {
+  padding-left: 40px;
+}
+
+.div2 {
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.div2-header {
+    /* color: green; 
+} */
+
+.div2text {
+  font-size: 18px;
+}
+
+/* STYLING THE 2ND MAIN AFTER SECTION*/
+.main2 {
+  background-color: rgba(173, 216, 230, 0.2);
+  padding: 4rem 0;
+}
+
+.h3-main2 {
+  color: #33619b;
+  font-size: 27px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.h3-main2::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
+  height: 3.5px;
+  width: 90px;
+  background-color: #33619b;
+}
+
+.main2-1 {
+  /* margin-bottom: 3rem; */
+  padding: 3rem;
+}
+
+/* STYLING THE 3 BOXES IN THE 2ND MAIN */
+
+.main2-2 {
+  display: flex;
+  gap: 30px;
+  padding: 2rem 7rem;
+}
+
+/* BOX 1 */
+.abc {
+  width: 30%;
+  height: 60vh;
+  background-color: rgba(255, 160, 122, 0.3);
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cde {
+  color: red;
+}
+
+.cde h5 {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.cde p {
+  margin-bottom: 20px;
+}
+
+.cde i img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+/* BOX 2 */
+.abc1 {
+  width: 30%;
+  height: 60vh;
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cde1 {
+  /* background-color: gray; */
+  color: darkblue;
+}
+
+.cde1 h5 {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.cde1 p {
+  margin-bottom: 20px;
+}
+
+.cde1 i img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+/* BOX 3 */
+.abc2 {
+  width: 30%;
+  height: 60vh;
+  background-color: rgba(144, 238, 144, 0.5);
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cde2 {
+  /* background-color: gray; */
+  color: green;
+}
+
+.cde2 h5 {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.cde2 p {
+  margin-bottom: 20px;
+}
+
+.cde2 i img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+/* STYLING THE DIV AFTER THE 2ND MAIN */
+.pricing {
+  /* background-color: red; */
+  padding: 5.5rem 0;
+}
+
+.pricing-con {
+  /* background-color: blue; */
+  padding: 0 65px;
+}
+
+.bar {
+  padding-bottom: 3rem;
+}
+
+.h3-pricing {
+  color: #33619b;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.h3-pricing::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 3.5px;
+  transform: translateX(-50%);
+  left: 50%;
+  right: 50%;
+  top: -20px;
+  background: #33619b;
+}
+
+/* STYLING THE TIME DIV */
+.packages {
+  background-color: white;
+}
+
+.time {
+  background-color: rgba(173, 216, 230, 0.675);
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.month {
+  /* color: rgb(51, 97, 155); */
+  color: #fff;
+  padding: 7px 20px;
+  font-weight: 500;
+  background-color: navy;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .month:hover{
+    color: #fff;
+    background-color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.year {
+  color: #33619b;
+  padding: 5px 20px;
+  font-weight: 500;
+}
+
+.year:hover {
+  color: #fff;
+  background-color: navy;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* STYLING PACKAGES PARAGRAPH */
+.packages p {
+  text-align: center;
+  color: #33619b;
+  margin-bottom: 2rem;
+}
+
+/* STYLING THE TIERS */
+.tiers {
+  /* background-color: gray; */
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 0;
+  transition: 0.8s ease;
+}
+
+/* STYLING FREE TIERS 1 */
+.free-tier1 {
+  width: 17rem;
+  border: 1px solid black;
+  border-color: #33619b;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 50px 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+
+.free-tier1:hover {
+  background-color: #1560bd;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: 0.1s;
+  transform: translate(1px, 1px);
+  transform: scale(1.05);
+}
+
+.free-tier1 img {
+  width: 30px;
+  position: relative;
+  left: 80%;
+  margin-bottom: 14px;
+}
+
+.free-tier1 h4 {
+  color: #33619b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* .free-tier1 h4:hover {
+    color: #fff;
+} */
+
+.free-tier1 #p1 {
+  color: rgba(0, 0, 225, 0.75);
+  text-align: left;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .free-tier1 #p1:hover {
+    color: #fff;
+} */
+
+.free-tier1 #p2 {
+  text-align: left;
+  color: #33619b;
+  margin-bottom: 15px;
+}
+
+.free-tier1 #line {
+  width: 100%;
+  height: 1.5px;
+  background-color: #33619b;
+}
+
+.free-tier1 #p3 {
+  text-align: left;
+  color: #000;
+  margin: 8px 0;
+}
+
+.free-tier1 ul {
+  /* list-style-image: url(images/favicon-32x32.png); */
+  list-style-type: none;
+  line-height: 2rem;
+  margin-bottom: 2.8rem;
+}
+
+/* STYLING FREE TIERS */
+.free-tier {
+  width: 17rem;
+  border: 1px solid black;
+  border-color: #33619b;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 50px 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+
+/* .free-tier:hover {
+    background-color: #1560bd;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.4), 0 2px 10px 0 rgba(0,0,0,.3);
+    color: #fff;
+} */
+
+.free-tier img {
+  width: 30px;
+  position: relative;
+  left: 80%;
+  margin-bottom: 14px;
+}
+
+.free-tier h4 {
+  color: #33619b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.free-tier #p1 {
+  color: rgba(0, 0, 225, 0.75);
+  text-align: left;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.free-tier #p2 {
+  text-align: left;
+  color: #33619b;
+  margin-bottom: 15px;
+}
+
+.free-tier #line {
+  width: 100%;
+  height: 1.5px;
+  background-color: #33619b;
+}
+
+.free-tier #p3 {
+  text-align: left;
+  color: #000;
+  margin: 8px 0;
+}
+
+.free-tier ul {
+  /* list-style-image: url(images/favicon-32x32.png); */
+  list-style-type: none;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+#tier-btn {
+  width: 100%;
+  /* background-color: rgba(173, 216, 230, 0.5); */
+  background-color: #c6dcf8;
+  color: #33619b;
+  padding: 10px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+}
+
+/* STYLING THE FOOTER 
+    transform: skewY(350deg);*/
+.footer {
+  background-color: #1560bd;
+  /* padding-top: 3rem; */
+  /* padding: 10px 10px; */
+}
+
+.slant {
+  width: 0px;
+  height: 0px;
+  border-left: 100vw solid #fff;
+  border-bottom: 20vw solid #1560bd;
+  /* margin-top: 13.9vw; */
+  padding-bottom: 14vw;
+}
+/* 
+footer {
+} */
+
+.footer-1 {
+  padding: 20px;
+}
+
+.footer-1a {
+  /* background-color: firebrick; */
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.footer-1a-ul {
+  text-align: center;
+  color: #fff;
+  /* background-color: gray; */
+  padding: 5px 9rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.footer-1a-ul ul li {
+  list-style: none;
+}
+
+.footer-1a-ul ul li a {
+  color: #fff;
+  font-size: larger;
+}
+
+/* STYLING THE SOCIAL MEDIA BOX */
+
+.connect {
+  /* background-color: greenyellow; */
+  text-align: center;
+  /* padding: 5px; */
+  margin-bottom: 1rem;
+}
+
+.connect h5 {
+  color: #fff;
+  font-size: larger;
+}
+
+.boxicon {
+  padding: 10px;
+}
+
+.boxicon a {
+  margin: 0.3rem; /* THE SPACE BETWEEN THE SOCIAL MEDIA ICON*/
+}
+
+/* STYLING THE SOCIAL MEDIA ICONS */
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 18px;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: #ffffff;
+}
+
+.fa-facebook:hover {
+  background-color: #fff;
+  color: #1560bd;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: #ffffff;
+}
+
+.fa-instagram:hover {
+  background-color: #fff;
+  color: #1560bd;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: #ffffff;
+}
+
+.fa-twitter:hover {
+  background-color: #fff;
+  color: #1560bd;
+}
+
+/* E-mail */
+.fa-envelope-o {
+  color: #ffffff;
+}
+
+.fa-envelope-o:hover {
+  background-color: #fff;
+  color: #1560bd;
+}
+
+/* STYLING THE 2ND PART OF FOOTER */
+.footer-2 {
+  height: 50px;
+  background-color: rgba(2, 54, 118, 0.5);
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+.footer-2 p {
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+.footer-2 a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-2 a:hover {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-2 hr {
+  width: 50%;
+  margin: 0.25rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
